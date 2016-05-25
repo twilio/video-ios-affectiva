@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmoCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdR-bE-Cne" userLabel="Status Message">
+                                <rect key="frame" x="0.0" y="291" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identity to Invite" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="5NX-uo-P8t" userLabel="Invitee Text Field">
+                                <rect key="frame" x="200" y="50" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9kY-rm-BPe"/>
+                                    <constraint firstAttribute="height" constant="45" id="Hkd-mc-gT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-M4-N94">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33m-Jx-HhL">
+                                <rect key="frame" x="255" y="537" width="91" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="disconnectButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riQ-7M-cyG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anJ-jm-k78">
+                                <rect key="frame" x="450" y="20" width="130" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="9qq-fL-2Uq"/>
+                                    <constraint firstAttribute="width" constant="130" id="zM0-Bb-fAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxa-U3-RVI">
+                                <rect key="frame" x="20" y="453" width="151" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="6Vp-Mf-GcO"/>
+                                    <constraint firstAttribute="height" constant="123" id="Huu-tj-9m5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HO5-M4-N94" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="24D-Xi-kBd"/>
+                            <constraint firstItem="5NX-uo-P8t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="8WG-yp-FQa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33m-Jx-HhL" secondAttribute="bottom" constant="30" id="9es-em-BZp"/>
+                            <constraint firstItem="anJ-jm-k78" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ekb-CP-Uk5"/>
+                            <constraint firstItem="Cxa-U3-RVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ErV-4B-IPE"/>
+                            <constraint firstItem="SdR-bE-Cne" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.5" id="Geq-9C-L8X"/>
+                            <constraint firstAttribute="trailing" secondItem="SdR-bE-Cne" secondAttribute="trailing" id="HTg-H5-1u6"/>
+                            <constraint firstItem="SdR-bE-Cne" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KJr-CG-MeH"/>
+                            <constraint firstItem="SdR-bE-Cne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3x-IY-32c"/>
+                            <constraint firstItem="HO5-M4-N94" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XIL-vg-fFc"/>
+                            <constraint firstItem="5NX-uo-P8t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fs7-7K-CPD"/>
+                            <constraint firstItem="33m-Jx-HhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u3L-PF-kgB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cxa-U3-RVI" secondAttribute="bottom" constant="24" id="uzz-gq-nMb"/>
+                            <constraint firstItem="anJ-jm-k78" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zvw-Wt-SWj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="disconnectButton" destination="33m-Jx-HhL" id="nv9-AD-4bF"/>
+                        <outlet property="emojiField" destination="anJ-jm-k78" id="ys6-0u-axL"/>
+                        <outlet property="inviteeTextField" destination="5NX-uo-P8t" id="X5f-r1-Ycv"/>
+                        <outlet property="spinner" destination="HO5-M4-N94" id="PDL-3l-qzH"/>
+                        <outlet property="statusMessage" destination="SdR-bE-Cne" id="6bv-l2-91N"/>
+                        <outlet property="valenceField" destination="Cxa-U3-RVI" id="YQZ-oo-Qe0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="632"/>
+        </scene>
+    </scenes>
+</document>
